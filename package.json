@@ -1,0 +1,23 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cloud": "node  cloud/app.js",
+    "station": "nodemon --exec 'node --trace-deprecation station/app.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "deep-freeze": "0.0.1",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "superagent": "^3.5.2",
+    "ursa": "^0.9.4",
+    "uuid": "^3.0.1"
+  }
+}
