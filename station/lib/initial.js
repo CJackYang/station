@@ -36,8 +36,6 @@ class StationInitial extends EventEmitter{
     }
   }
 
-  
-
   async createKeysAsync() {
     let pbkPath = path.join(process.cwd(), FILE.PUBKEY)
     let pvkPath = path.join(process.cwd(), FILE.PVKEY)

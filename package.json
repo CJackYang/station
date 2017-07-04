@@ -16,6 +16,7 @@
     "deep-freeze": "0.0.1",
     "express": "^4.15.3",
     "morgan": "^1.8.2",
+    "socket.io-client": "^2.0.3",
     "superagent": "^3.5.2",
     "ursa": "^0.9.4",
     "uuid": "^3.0.1"

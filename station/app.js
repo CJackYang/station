@@ -8,6 +8,7 @@ const logger = require('morgan')
 
 const Initial = require('./lib/initial')
 const Register = require('./lib/register')
+const Connect = require('./lib/connect')
 
 const app = express()
 
@@ -27,6 +28,7 @@ initial.on('StationInitialDone', err => {
     Register((e, data) => {
       if(e) console.log(e)
       global.SA = data.data //TODO SA in global
+      let connect = new Connect('http://localhost')
     })
   app.listen(8888, () => {
     console.log('Station run at port 8888')
