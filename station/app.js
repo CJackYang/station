@@ -26,9 +26,10 @@ initial.on('StationInitialDone', err => {
   if(err) console.log('STATION INIT: ', err)
   else
     Register((e, data) => {
-      if(e) console.log(e)
-      global.SA = data.data //TODO SA in global
-      let connect = new Connect('http://localhost')
+      if(e) return console.log(e)
+      console.log(data)
+      global.SA = data //TODO SA in global
+      let connect = new Connect('http://10.10.9.59:5757')
     })
   app.listen(8888, () => {
     console.log('Station run at port 8888')

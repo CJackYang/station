@@ -48,7 +48,7 @@ class StationInitial extends EventEmitter{
 
     }
 
-    let modulusBit = 512 
+    let modulusBit = 2048 
 
     let key  = ursa.generatePrivateKey(modulusBit, 65537)
 
